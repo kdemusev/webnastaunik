@@ -13,6 +13,7 @@ class CWebinar extends CBase {
   }
 
   function add() {
+
     $this->allow(88);
 
     $user_id = $this->user_id;
