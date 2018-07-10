@@ -1,0 +1,93 @@
+// out: sc2editor.css, sourcemap: false, compress: true
+
+@bgcolor: white;
+@bgcolorforum: rgb(238, 238, 238);
+@hdcolor: #e9e9e9;
+@lbcolor: #f6f6f6;
+@brcolor: #c9c9c9;
+@selected: #c9c9c9;
+@color: #555555;
+@subcolor: #505050;
+@btcolor: #4330ff;
+@wncolor: #d90000;
+@bttext: white;
+@btcolorover: #94a3fe;
+
+.sc2editor {
+  position: relative;
+  display: block;
+}
+
+.sc2editor .editor {
+  position: relative;
+  min-height: 164px;
+  padding: 5px;
+  background-color: @bgcolor;
+  border: 1px solid @brcolor;
+}
+
+.sc2editor .panel {
+  position: relative;
+  min-height: 32px;
+  line-height: 32px;
+  background-color: @lbcolor;
+  border-left: 1px solid @brcolor;
+  border-right: 1px solid @brcolor;
+  border-bottom: 1px solid @brcolor;
+}
+
+.sc2editor .panel .button {
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  margin: 0;
+  border-right: 1px solid @brcolor;
+  background-color: transparent;
+  float: left;
+}
+
+.sc2editor .panel .button:hover {
+  background-color: @btcolorover;
+}
+
+.sc2editor .panel button {
+  display: inline-block;
+  line-height: 32px;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+}
+
+.sc2editor .panel .separator {
+  float: left;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 5px;
+  border-right: 1px solid @brcolor;
+}
+
+.sc2editor .panel2 {
+  position: relative;
+  background-color: @lbcolor;
+  border-left: 1px solid @brcolor;
+  border-right: 1px solid @brcolor;
+  border-bottom: 1px solid @brcolor;
+  display: none;
+}
+
+.sc2editor input, button {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.adminbutton {
+  display: inline-block;
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+  border: 2px solid rgb(220, 0, 0);
+  margin: 0px 2px;
+  vertical-align: middle;
+}

@@ -1,0 +1,61 @@
+// main: school.less
+
+.extable {
+  position: relative;
+  font-family: Tahoma;
+  font-size: 11px;
+  line-height: 11px;
+
+  div {
+    position: absolute;
+  }
+
+  table {
+    //table-layout: fixed !important;
+    border-collapse: collapse;
+    border: 1px solid @brcolor;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+
+    td, th {
+      height: 11px;
+      padding: 2px;
+      margin: 0px;
+      border: 1px solid @brcolor;
+      background-color: white;
+    }
+
+    th {
+      background-color: @brcolor;
+    }
+
+    th.vertical {
+      white-space: nowrap;
+      vertical-align: bottom;
+    }
+
+    th.vertical > span {
+      display: block;
+      transform: rotate(-90deg) translateX(15px);
+      width: 36px;
+    }
+
+  }
+
+  .input {
+    padding: 0px !important;
+    margin: 0px !important;
+    width: 100% !important;
+    height: 11px !important;
+    border: none !important;
+    text-align: center;
+    font-family: Tahoma !important;
+    font-size: 11px !important;
+    line-height: 11px !important;
+  //  -moz-box-sizing: border-box !important;
+  //  -webkit-box-sizing: border-box !important;
+  //  box-sizing: border-box !important;
+
+  }
+}

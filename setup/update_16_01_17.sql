@@ -1,0 +1,1 @@
+ALTER TABLE mbdialog ADD COLUMN mbdanonym TINYINT DEFAULT 0;

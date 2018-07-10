@@ -1,0 +1,39 @@
+// main: school.less
+
+.sc3table {
+  width: 100%;
+  border: 1px solid @brcolor;
+  border-collapse: collapse;
+  font-size: 12px;
+  td {
+    border: 1px solid @brcolor;
+    padding: 2px;
+    vertical-align: top;
+
+    img {
+      height: 12px;
+      vertical-align: middle;
+      cursor: pointer;
+    }
+  }
+  th {
+    border: 1px solid @brcolor;
+    background-color: @brcolor;
+    padding: 2px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+  }
+  th.vertical {
+    white-space: nowrap;
+    vertical-align: bottom;
+  }
+  th.vertical > div {
+    transform: rotate(-90deg) translateX(5px);
+    width: 25px;
+  }
+}
+
+.overablerow tr:hover {
+  background-color: @selected;
+}

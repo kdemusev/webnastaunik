@@ -1,0 +1,46 @@
+.journalleft {
+  width: 60%;
+  //background-color: red;
+  float: left;
+  position: relative;
+}
+
+.journalmiddle {
+  position: absolute;
+  left: 250px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  //background-color: green;
+  overflow-x: auto;
+}
+
+.journalright {
+  position: relative;
+  width: 40%;
+  float: left;
+  //background-color: blue;
+  overflow-x: auto;
+
+  table {
+    width: 100%;
+  }
+}
+
+.journal {
+  position: relative;
+
+  table {
+    border: 1px solid @brcolor;
+    border-collapse: collapse;
+  }
+  td, th {
+    border: 1px solid @brcolor;
+    overflow: hidden;
+    padding: 2px;
+  }
+  th {
+    font-weight: bold;
+    vertical-align: bottom;
+  }
+}

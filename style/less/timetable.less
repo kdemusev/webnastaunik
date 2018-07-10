@@ -1,0 +1,171 @@
+// main: school.less
+
+.timetableleft {
+  float: left;
+  width: 146px;
+  margin-right: 15px;
+  min-height: 35px;
+
+  p {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+.timetableright {
+    float: left;
+}
+
+.subjectbutton {
+  display: block;
+  height: 35px;
+  position: relative;
+  background-color: lightblue;
+  margin: 0;
+  cursor: pointer;
+}
+
+td div:nth-of-type(1):nth-last-of-type(2) {
+  width: 73px;
+  float: left;
+}
+
+td div:nth-of-type(2):nth-last-of-type(1) {
+  float: left;
+  width: 72px;
+  border-left: 1px solid @brcolor;
+}
+
+td div:nth-of-type(1):nth-last-of-type(3) {
+  width: 48px;
+  float: left;
+}
+
+td div:nth-of-type(2):nth-last-of-type(2) {
+  float: left;
+  width: 48px;
+  border-left: 1px solid @brcolor;
+}
+
+td div:nth-of-type(3):nth-last-of-type(1) {
+  float: left;
+  width: 48px;
+  border-left: 1px solid @brcolor;
+}
+
+
+/*td .subjectbutton:not(:only-of-type) {
+  float: left;
+  width: 73px;
+}
+
+td .subjectbutton:ntn-child
+
+td .subjectbutton:not(:only-of-type):last-child {
+  border-left: 1px solid @brcolor;
+  width: 72px;
+}*/
+
+.timetableleft .subjectbutton {
+  margin: 2px 0;
+}
+
+.timetableleft .subjectbuttonplaceholder {
+  .subjectbutton;
+  background-color: grey;
+}
+
+.shedule {
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.shedule td, .shed td {
+    width: 150px;
+    height: 35px;
+    padding: 0 !important;
+}
+
+.shedule .number {
+    width: 15px;
+    text-align: center;
+}
+
+.shedule .subjectstodrag {
+  width: 146px;
+  height: 35px;
+  position: relative;
+  z-index: 5;
+}
+
+.shedule .hours {
+    width: 30px;
+    text-align: center;
+}
+
+.shedule .subjectbuttonplaceholder {
+/*  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: block;*/
+  background-color: grey;
+  opacity: 0.5;
+  display: block;
+  height: 35px;
+
+}
+
+
+
+.shedule, .shed {
+  p {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .ghost {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 146px;
+    height: 35px;
+    display: block;
+    background-color: red;
+    opacity: 0.5;
+    z-index: 1;
+    line-height: 35px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    display: none;
+  }
+}
+
+.subjectbutton .subject {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 2px;
+    height: 15px;
+    line-height: 15px !important;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.subjectbutton .teacher {
+    text-align: right;
+    font-size: 12px;
+    padding: 0 2px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}

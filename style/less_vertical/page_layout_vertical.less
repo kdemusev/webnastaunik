@@ -1,0 +1,182 @@
+// main: school_vertical.less
+
+.header {
+    position: fixed;
+    background-color: @menucolor;
+    //box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.22);
+    border-bottom: 1px solid @brcolor;
+    height: 49px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    z-index: 500;
+
+    div {
+      display: inline-block;
+    }
+}
+
+.header .mainlogo {
+  width: 124px;
+  height: 48px;
+  background-image: url(logo_vertical.png);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header .btn {
+    //border-right: 1px solid @brcolor;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+
+    height: 49px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 48px;
+    color: @color;
+    font-family: Roboto, Helvetica, sans-serif;
+    img {
+      -webkit-transition: all 1s ease;
+    	-moz-transition: all 1s ease;
+    	-o-transition: all 1s ease;
+      transition: all 1s ease;
+      vertical-align: middle;
+    }
+
+    span {
+      display: none;
+    }
+}
+
+// last one button
+.header .noborder {
+    border: none;
+}
+
+
+.header .padding {
+    padding: 0 10px;
+}
+
+// to position elements at the right of the header
+.header .right {
+  padding-left: 0px;
+    background-color: @menucolor;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 49px;
+}
+
+// menu left panel
+.leftpanel {
+  font-family: Roboto, Helvetica, sans-serif;
+    width: 200px;
+    position: fixed;
+    left: 0px;
+    top: 50px;
+    bottom: 0px;
+    background-color: @menucolor;
+    border-right: 1px solid @brcolor;
+    overflow: auto;
+    display: none;
+    z-index: 5;
+}
+
+// menu left panel button
+.leftpanel a {
+    display: block;
+    width: 170px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 15px;
+    text-decoration: none;
+    color: @color;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.leftpanel h3 {
+  margin: 0 0 0 30px;
+  padding: 0;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+// menu left panel button hover
+.leftpanel a:hover {
+    background-color: @selected;
+}
+
+@-webkit-keyframes leftmenu {
+    from {left: -200px;}
+    to {left: 0px;}
+}
+@keyframes leftmenu {
+    from {left: -200px;}
+    to {left: 0px;}
+}
+
+@-webkit-keyframes hidemenu {
+    from {left: 0px;}
+    to {left: -200px;}
+}
+@keyframes hidemenu {
+    from {left: 0px;}
+    to {left: -200px;}
+}
+
+
+// main frame for page content
+.mainframe {
+    position: absolute;
+    left: 0px;
+    top: 49px;
+    bottom: 60px;
+    right: 0px;
+    overflow: auto;
+    padding: 15px;
+}
+
+// main frame for page content when no menu visible (ex. registration)
+.fullframe {
+    position: absolute;
+    left: 0px;
+    top: 49px;
+    bottom: 20px;
+    right: 0px;
+    overflow: auto;
+    padding: 25px 15px 15px 35px;
+}
+
+.footer {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    min-height: 20px;
+    line-height: 20px;
+    border-top: 1px solid @brcolor;
+    background-color: white;
+    color: @color;
+}
+
+.footer span {
+    display: block;
+    float: left;
+    padding: 0 15px;
+}
+
+.footer span a {
+    font-size: 12px !important;
+}
+
+// header for content
+.subheader {
+    font-family: Roboto, Helvetica, sans-serif;
+    font-size: 35px;
+    margin-bottom: 15px;
+    color: @subcolor;
+}

@@ -1,0 +1,11 @@
+delete from concurs_types;
+delete from concurs_pupils;
+delete from concurs;
+delete from concurs_sections;
+delete from olymp_forms;
+delete from olymp_pupils;
+delete from olymp_teachers;
+delete from olymp_years;
+delete from olymp_subjects;
+delete from olymp_schools;
+delete from olymp;
