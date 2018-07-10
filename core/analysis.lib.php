@@ -4,6 +4,7 @@ include ('base.lib.php');
 
 class CAnalysis extends CBase {
 
+
   function __construct($db, $view) {
       parent::__construct($db, $view);
 
